@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/xe
+    username: jwt
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    database-platform: org.hibernate.dialect.Oracle12cDialect
+jwt:
+  secret-key: secret-code
+  issuer: http://javidmolaei.ir
+server:
+  port: 8585
